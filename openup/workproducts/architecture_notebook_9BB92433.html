@@ -91,16 +91,16 @@
 								</span>
 <ul>
 <li>
-<a href="./../../openup/tasks/design_solution_A97CE9EA.html" guid="_0fshwMlgEdmt3adZL5Dmdw">Design the Solution</a>
+<a href="./../../openup/tasks/disenar_solucion_A97CE9EA.html" guid="_0fshwMlgEdmt3adZL5Dmdw">Dise&ntilde;ar la Soluci&oacute;n</a>
 </li>
 <li>
-<a href="./../../openup/tasks/refine_the_architecture_7723A69E.html" guid="_0gRJgMlgEdmt3adZL5Dmdw">Refine the Architecture</a>
+<a href="./../../openup/tasks/redefinir_la_arquitectura_7723A69E.html" guid="_0gRJgMlgEdmt3adZL5Dmdw">Redefinir la Arquitectura</a>
 </li>
 </ul>
 <br>
 <ul>
 <li>
-<a href="./../../openup/tasks/outline_the_architecture_FF123A81.html" guid="_0f-1oMlgEdmt3adZL5Dmdw">Outline the Architecture</a>
+<a href="./../../openup/tasks/delinear_la_arquitectura_FF123A81.html" guid="_0f-1oMlgEdmt3adZL5Dmdw">Delinear la arquitectura</a>
 </li>
 <li>
 <a href="./../../openup/tasks/plan_iteration_957C90DC.html" guid="_0keUEMlgEdmt3adZL5Dmdw">Plan de Iteraci&oacute;n</a>
@@ -110,10 +110,10 @@
 								</span>
 <ul>
 <li>
-<a href="./../../openup/tasks/outline_the_architecture_FF123A81.html" guid="_0f-1oMlgEdmt3adZL5Dmdw">Outline the Architecture</a>
+<a href="./../../openup/tasks/delinear_la_arquitectura_FF123A81.html" guid="_0f-1oMlgEdmt3adZL5Dmdw">Delinear la arquitectura</a>
 </li>
 <li>
-<a href="./../../openup/tasks/refine_the_architecture_7723A69E.html" guid="_0gRJgMlgEdmt3adZL5Dmdw">Refine the Architecture</a>
+<a href="./../../openup/tasks/redefinir_la_arquitectura_7723A69E.html" guid="_0gRJgMlgEdmt3adZL5Dmdw">Redefinir la Arquitectura</a>
 </li>
 </ul>
 </td>
@@ -124,41 +124,85 @@
 <div class="sectionContent">
 <table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><p>
-    El Architecture Notebook es un artefacto detallado que incluye lo siguiente:
-</p>
+<th class="sectionTableHeading" scope="row">Main Description</th><td class="sectionTableCell"><h3>
+    1. Aplicación Web RPA Hosteada en GitHub
+</h3>
 <ul>
     <li>
-        <strong>Decisiones Arquitectónicas:</strong> Registra las decisiones clave tomadas durante el diseño arquitectónico
-        del software. Esto puede incluir elecciones de tecnología, estructuras de datos, patrones arquitectónicos y
-        estrategias de implementación.
+        <strong>Interfaz de Usuario:</strong> Es el punto de contacto entre el usuario y la aplicación. Esta interfaz es
+        crucial para proporcionar una experiencia de usuario fluida y eficiente. Al estar alojada en un servidor de GitHub,
+        se beneficia de la robustez y fiabilidad que ofrece esta plataforma, además de facilitar la gestión del código y
+        las actualizaciones.
     </li>
     <li>
-        <strong>Diagramas y Modelos:</strong> Contiene diagramas arquitectónicos, como diagramas de componentes, diagramas
-        de despliegue, diagramas de flujo y otros modelos visuales que representan la estructura del sistema y las
-        interacciones entre componentes.
+        <strong>Servidor GitHub con URL Custom:</strong> El alojamiento en un servidor de GitHub proporciona una base
+        sólida para la aplicación web. El uso de una URL personalizada mejora la identidad de marca y la facilidad de
+        acceso para los usuarios.
+    </li>
+</ul>
+<h3>
+    2. APIs (Backend)
+</h3>
+<ul>
+    <li>
+        <strong>API de OAuth (Servicio de Terceros):</strong> Esta API maneja el proceso de autenticación y autorización,
+        proporcionando un método seguro y eficiente para gestionar el inicio de sesión de los usuarios. Utilizar un
+        servicio de terceros para OAuth ayuda a mantener la seguridad de los datos de los usuarios y reduce la carga de
+        desarrollo y mantenimiento en esta área crítica.
     </li>
     <li>
-        <strong>Componentes y Módulos:</strong> Enumera y describe los componentes, módulos y subsistemas del software,
-        junto con sus responsabilidades y relaciones.
+        <strong>API de Procesamiento de Lenguaje Natural y AI (Python):</strong> Desarrollada en Python, esta API realiza
+        tareas de procesamiento de lenguaje natural e inteligencia artificial. Utiliza herramientas como Freeling y un
+        modelo BERT para la evaluación de conectividad, lo que permite analizar y entender el contenido de las tesis de
+        manera eficiente y precisa.
     </li>
     <li>
-        <strong>Patrones de Diseño:</strong> Documenta cualquier patrón de diseño utilizado en la arquitectura, explicando
-        su propósito y cómo se aplica en el contexto del proyecto.
+        <strong>API de Lógica de Aplicación (C#):</strong> Esta API, desarrollada en C#, gestiona toda la lógica de la
+        aplicación. Es responsable de comunicarse con la base de datos PostgreSQL para administrar el historial de
+        evaluaciones de usuario, resultados y demás información relevante. El uso de C# para esta API asegura un
+        rendimiento robusto y la capacidad de manejar complejas operaciones lógicas.<br />
+    </li>
+</ul>
+<h3>
+    3. Base de Datos PostgreSQL:<br />
+</h3>
+<ul>
+    <li>
+        <strong>Datos de Evaluaciones y Resultados:</strong> Una base de datos PostgreSQL almacena y gestiona todos los
+        datos relacionados con las evaluaciones de usuarios, resultados y otra información pertinente. PostgreSQL es una
+        elección excelente para este propósito debido a su escalabilidad, robustez y soporte para complejas consultas y
+        operaciones de datos.
+    </li>
+</ul>
+<h3>
+    <br />
+    Relaciones y Flujos:
+</h3>
+<ul>
+    <li>
+        <strong>Flujos entre la Aplicación Web y las APIs:</strong> La aplicación web interactúa con la API de OAuth para
+        la autenticación del usuario, con la API de Procesamiento de Lenguaje Natural y AI para la evaluación de contenido
+        de tesis, y con la API de Lógica de Aplicación para procesar y almacenar los resultados de las evaluaciones.
     </li>
     <li>
-        <strong>Consideraciones de Rendimiento y Seguridad:</strong> Incluye consideraciones técnicas relacionadas con el
-        rendimiento, la escalabilidad, la seguridad y otros aspectos importantes de la arquitectura.
+        <strong>Comunicación entre las APIs y la Base de Datos:</strong> La API de Lógica de Aplicación interactúa con la
+        base de datos PostgreSQL para almacenar y recuperar datos relacionados con las evaluaciones de los usuarios y sus
+        resultados.<br />
     </li>
-    <li>
-        <strong>Interfaces y APIs:</strong> Detalla las interfaces y APIs utilizadas por los componentes del sistema,
-        incluyendo descripciones de métodos, parámetros y protocolos de comunicación.
-    </li>
-    <li>
-        <strong>Cambios y Evolución:</strong> Registra cualquier cambio significativo en la arquitectura a lo largo del
-        tiempo, junto con las razones y el impacto de estos cambios.
-    </li>
-</ul></td>
+</ul>
+<h3>
+    Justificación de la Arquitectura
+</h3>
+<p>
+    Esta arquitectura está diseñada para ser robusta, escalable y segura, con cada componente desempeñando un papel
+    específico que contribuye al funcionamiento eficiente del sistema. La separación de preocupaciones, evidente en la
+    utilización de APIs dedicadas para diferentes tareas, asegura que el sistema sea mantenible y extensible, mientras que
+    el uso de tecnologías consolidadas y confiables garantiza la estabilidad y el rendimiento.
+</p>
+<br />
+<p>
+    <img alt="PlantUML diagram"     src="https://cdn-0.plantuml.com/plantuml/png/bLFDRXCn4BxxAKRbskO1E5JTqW2HqX8IAWueXuaztJXuxSWUHog8H-BKHyYBCHkBiFrPRSaXSVpDzytFVBv8Z95puzGMzNUi2KwghRCQjTq_UFXAAvZFgXFugK0-toQUATxX3p04jobZj65Pa0N5dJKXmWVB7_DggNwfZkHiaeuQygUbVweohvVmw6uMWwQ4ZINFeRsOagypRWXka7D4jtmKFjq_r59gU-mKVKXja765IN9VjjyISOKS4in2uZhIulFqM4y196AyGvT58tXAS0zpIjancf0EYY_s3cTdvyzxXxTGkR11Wq1UFOU5z7GCmiXCdlysCS0Q7fGezWVTGpKPoD0pMv7j83TK1vcNKa-w6OtEN_QAqA_HqmPXugqmMsn1gNJy-jvUL-ZOx_Q_iRD7DS0fkds6AMjjK9F7WprqtbB44gUK3qmGRRrc27V_v-ZRXF0-4ZdhQr6-3ePSWCln_8k0Mum8LApPLjcAwE19ivNjeL7a3RJ9UqheVIK0LvGmnk1SSIgyUzChrZyLqQbCOxrD717MyXEYHIUnWb3tIGax5n-SGZmkvHI8zUXVuWivvSRz0G00" />
+</p></td>
 </tr>
 <tr valign="top">
 <th class="sectionTableHeading" scope="row">Brief Outline</th><td class="sectionTableCell">El Architecture Notebook es un recurso valioso para los equipos de desarrollo de software, ya que garantiza que la
@@ -219,7 +263,7 @@ proyecto. Ayuda a mantener la integridad y la calidad de la arquitectura del sof
     ensure that the essence of the system can be understood as the system grows.
 </p>
 <p>
-    Part of the architecture&nbsp;frequently references architecturally significant portions of the&nbsp;<a class="elementLink" href="./../../openup/workproducts/design_D677D182.html" guid="_0WuL8slgEdmt3adZL5Dmdw">Design</a>. It can reference models that describe <a class="elementLink" href="./../../openup/guidances/guidelines/architectural_view_FF6EDA37.html" guid="_T9nygClEEduLGM8dfVsrKg">Architectural View</a>s for communicating the architecture. A view is a representation
+    Part of the architecture&nbsp;frequently references architecturally significant portions of the&nbsp;<a class="elementLink" href="./../../openup/workproducts/diseno_D677D182.html" guid="_0WuL8slgEdmt3adZL5Dmdw">Deseño</a>. It can reference models that describe <a class="elementLink" href="./../../openup/guidances/guidelines/architectural_view_FF6EDA37.html" guid="_T9nygClEEduLGM8dfVsrKg">Architectural View</a>s for communicating the architecture. A view is a representation
     of a system from the perspective of a related set of concerns.&nbsp;To choose the appropriate set of
     views,&nbsp;identify the Stakeholders who depend on software architecture documentation and the information that they
     need.

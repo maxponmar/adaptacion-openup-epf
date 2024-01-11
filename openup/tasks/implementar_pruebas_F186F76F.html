@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Task: Implementar Pruebas de Desarrollo</title>
+<meta name="uma.type" content="Task">
+<meta name="uma.name" content="implementar_pruebas">
+<meta name="uma.presentationName" content="Implementar Pruebas de Desarrollo">
+<meta name="uma.category" content="Discipline:development:Development">
+<meta name="element_type" content="activity">
+<meta name="filetype" content="description">
+<meta name="role" content="Desarrollador">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo, '', true, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div id="page-guid" value="_0iL1EMlgEdmt3adZL5Dmdw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Task: Implementar Pruebas de Desarrollo</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/task.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Implementar una o más pruebas que permitan la validación de los componentes de software individuales mediante su ejecución.</td>
+</tr>
+<tr>
+<td>Disciplines: <a href="./../../openup/disciplines/development_B5D1D8A.html" guid="_0TeDoMlgEdmt3adZL5Dmdw">Development</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Purpose</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">Preparar la validación de un componente de software (por ejemplo, una operación, una clase, un procedimiento almacenado)
+mediante pruebas unitarias. El resultado son una o más nuevas pruebas de desarrollo.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Relationships</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Roles</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Primary Performer:
+								</span>
+<ul>
+<li>
+<a href="./../../openup/roles/desarrollador_C633AB7.html" guid="_0YDosMlgEdmt3adZL5Dmdw">Desarrollador</a>
+</li>
+</ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Additional Performers:
+								</span>
+<ul>
+<li>
+<a href="./../../openup/roles/tester_9859B590.html" guid="_0ZM4MclgEdmt3adZL5Dmdw">Tester</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Inputs</th><td class="sectionTableCell" width="42%"><span class="sectionTableCellHeading">Mandatory:
+								</span>
+<ul>
+<li>
+<a href="./../../openup/workproducts/implementacion_917CA61E.html" guid="_0YoQcMlgEdmt3adZL5Dmdw">Implementaci&oacute;n</a>
+</li>
+</ul>
+<ul></ul>
+</td><td class="sectionTableCell"><span class="sectionTableCellHeading">Optional:
+								</span>
+<ul>
+<li>
+<a href="./../../openup/workproducts/diseno_D677D182.html" guid="_0WuL8slgEdmt3adZL5Dmdw">Dese&ntilde;o</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Outputs</th><td class="sectionTableCell" colspan="2">
+<ul>
+<li>
+<a href="./../../openup/workproducts/developer_test_8470ED13.html" guid="_0YuXEclgEdmt3adZL5Dmdw">Prueba de Desarrollador</a>
+</li>
+</ul>
+<ul></ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Main Description</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Las pruebas de desarrollo son diferentes de otras formas de pruebas, ya que se basan en el comportamiento esperado de
+    las unidades de código en lugar de basarse directamente en los requisitos del sistema.
+</p>
+<p>
+    Es mejor realizar estas pruebas a una pequeña escala, mucho más pequeña que el código completo que un desarrollador
+    producirá durante el transcurso de una iteración. Esto se puede hacer para una operación, un campo agregado a una
+    interfaz de usuario, un procedimiento almacenado, etc. A medida que la base de código se construye de manera
+    incremental, se crearán nuevas pruebas y las pruebas existentes podrían ser revisadas para probar comportamientos
+    adicionales.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Steps</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell">
+<div class="stepHeading">Planificar Pruebas de Desarrollo</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>En esta etapa inicial, se define el plan de pruebas de desarrollo. Esto incluye identificar los objetivos de las pruebas,
+los recursos necesarios, los plazos y los criterios de aceptación.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Dise&ntilde;ar Casos de Prueba</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Diseñar casos de prueba detallados que cubran diferentes aspectos del software, incluyendo funcionalidad, rendimiento,
+seguridad y usabilidad. Cada caso de prueba debe tener entradas específicas, acciones a realizar y resultados esperados.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Entornos de Prueba</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Preparar los entornos de prueba, que pueden incluir servidores de prueba, bases de datos de prueba y configuraciones
+específicas. Asegurarse de que los entornos sean lo más parecidos posible al entorno de producción.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Implementar Pruebas Automatizadas</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Desarrollar y configurar pruebas automatizadas cuando sea posible. Las pruebas automatizadas son útiles para repetir
+pruebas con regularidad y para tareas repetitivas.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Ejecutar Casos de Prueba</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Ejecutar los casos de prueba diseñados en el entorno de prueba. Registrar los resultados de cada prueba, incluyendo
+cualquier error encontrado.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Evaluar Resultados de Pruebas</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Analizar los resultados de las pruebas y compararlos con los resultados esperados. Identificar y documentar cualquier error
+o discrepancia encontrada.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Corregir y Retestear</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Corregir los errores identificados durante las pruebas y volver a ejecutar las pruebas afectadas para asegurarse de que los
+problemas se han solucionado correctamente.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Pruebas de Regresi&oacute;n</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Realizar pruebas de regresión para asegurarse de que las modificaciones realizadas para corregir errores no hayan
+introducido nuevos problemas en el software existente.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Pruebas de Rendimiento</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Realizar pruebas de rendimiento para evaluar cómo se comporta el software bajo diferentes cargas y condiciones de uso.
+Identificar y resolver cuellos de botella de rendimiento.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Pruebas de Seguridad</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Realizar pruebas de seguridad para identificar posibles vulnerabilidades y riesgos de seguridad en el software. Corregir
+cualquier problema de seguridad encontrado.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Documentar Resultados</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Documentar todos los resultados de las pruebas, incluyendo los casos de prueba, los errores identificados, las correcciones
+realizadas y las conclusiones.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Informe de Pruebas</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Preparar un informe de pruebas que resuma los resultados de las pruebas y proporcione una evaluación de la calidad del
+software en desarrollo.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">New StepAprobaci&oacute;n para Implementaci&oacute;n</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Obtener la aprobación para la implementación del software en producción una vez que las pruebas hayan demostrado que cumple
+con los estándares de calidad establecidos.</td>
+</tr>
+</table>
+</div>
+<div class="stepHeading">Seguimiento Post-Implementaci&oacute;n</div>
+<div class="stepContent">
+<table class="stepTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>Realizar un seguimiento de la calidad del software en producción después de su implementación para identificar y abordar
+cualquier problema que pueda surgir.</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Key Considerations</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ol>
+    <li>
+        Automatizar las pruebas mediante una herramienta de pruebas de regresión unitaria (por ejemplo, xUnit) para que los
+        desarrolladores puedan ejecutar pruebas cada vez que realicen cambios en el código.
+    </li>
+    <li>
+        Realizar pruebas en función del riesgo del componente. Por ejemplo, cuanto más crítico sea un componente, más
+        importante será probarlo exhaustivamente.
+    </li>
+    <li>
+        Trabajar en conjunto con el Tester en todas las etapas de esta tarea para obtener información sobre las
+        consideraciones de prueba y calidad.
+    </li>
+</ol></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Alternatives</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Depender de las pruebas de aceptación para validar su software probablemente sea un enfoque que consuma tiempo, se
+    realice tarde en el proceso y no sea tan efectivo como las pruebas de desarrollo para identificar errores y encontrar
+    su ubicación en el código.
+</p>
+<p>
+    Las pruebas de aceptación son importantes para validar que el software cumple con los requisitos y expectativas del
+    usuario final, pero no deben ser la única forma de pruebas. Las pruebas de desarrollo, realizadas a nivel de código por
+    los propios desarrolladores, son esenciales para identificar y corregir problemas de manera temprana y eficaz. Combinar
+    pruebas de desarrollo y pruebas de aceptación en un enfoque integral de aseguramiento de la calidad suele ser la mejor
+    práctica para garantizar un software de alta calidad.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">More Information</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Concepts</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../openup/guidances/concepts/developer_testing_7AC4823.html" guid="_aFeZgJquEdukqcRKZBQN9w">Developer Testing</a>
+</li>
+<li>
+<a href="./../../openup/guidances/concepts/test_first_design_E01F3CB8.html" guid="_s7YkUBD2EdyfbNOwzwtrjw">Test-first Design</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Guidelines</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../openup/guidances/guidelines/test_first_design_21C77ADF.html" guid="_0Y6kUMlgEdmt3adZL5Dmdw">Test-first Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    This program and the accompanying materials are made available under the<br />
+     <a href="http://www.eclipse.org/org/documents/epl-v10.php" target="_blank">Eclipse Public License v1.0</a> which
+    accompanies this distribution.
+</p><p/><p>
+    <a class="elementLink" href="./../../openup/guidances/supportingmaterials/openup_copyright_C3031062.html" guid="_UaGfECcTEduSX6N2jUafGA">OpenUP Copyright</a>.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

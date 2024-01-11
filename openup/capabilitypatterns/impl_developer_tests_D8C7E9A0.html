@@ -43,10 +43,10 @@
 <td width="50"><img src="./../../images/taskdes_lg_dgm32.gif" alt="" title=""></td><td>
 <table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td valign="top">Implement one or more tests that enable the validation of the individual software components through execution.</td>
+<td valign="top">Implementar una o más pruebas que permitan la validación de los componentes de software individuales mediante su ejecución.</td>
 </tr>
 <tr>
-<td>Based on Method Task: <a href="./../../openup/tasks/impl_developer_tests_F186F76F.html" guid="_0iL1EMlgEdmt3adZL5Dmdw">Implement Developer Tests</a></td>
+<td>Based on Method Task: <a href="./../../openup/tasks/implementar_pruebas_F186F76F.html" guid="_0iL1EMlgEdmt3adZL5Dmdw">Implementar Pruebas de Desarrollo</a></td>
 </tr>
 </table>
 </td>
@@ -112,91 +112,66 @@
 <table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td class="sectionTableCell">
-<div class="stepHeading">Refine scope and identify the test(s)</div>
+<div class="stepHeading">Planificar Pruebas de Desarrollo</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td><p>
-    Select the increment of work to be tested and identify developer test(s) to verify that the <a class="elementLink" href="./../../openup/workproducts/implementation_917CA61E.html" guid="_0YoQcMlgEdmt3adZL5Dmdw">Implementation</a> being developed behaves correctly. One source for the expected
-    behavior for a software component is the <a class="elementLink" href="./../../openup/workproducts/design_D677D182.html" guid="_0WuL8slgEdmt3adZL5Dmdw">Design</a>.&nbsp;
-</p>
-<p>
-    In identifying the&nbsp;tests or in any other part of this task, consider collaborating with a <a class="elementLink" href="./../../openup/roles/tester_9859B590.html" guid="_0ZM4MclgEdmt3adZL5Dmdw">Tester</a> who
-    should be well-versed in the issues of testing.
-</p></td>
+<td>En esta etapa inicial, se define el plan de pruebas de desarrollo. Esto incluye identificar los objetivos de las pruebas,
+los recursos necesarios, los plazos y los criterios de aceptación.</td>
 </tr>
 </table>
 </div>
-<div class="stepHeading">Write the test setup</div>
+<div class="stepHeading">Dise&ntilde;ar Casos de Prueba</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td>To successfully run a test the system must be in a known state so that the correct behavior can be defined. Implement the
-setup logic that must be performed as part of the <a class="elementLink" href="./../../openup/workproducts/developer_test_8470ED13.html" guid="_0YuXEclgEdmt3adZL5Dmdw">Developer Test</a>.</td>
+<td>Diseñar casos de prueba detallados que cubran diferentes aspectos del software, incluyendo funcionalidad, rendimiento,
+seguridad y usabilidad. Cada caso de prueba debe tener entradas específicas, acciones a realizar y resultados esperados.</td>
 </tr>
 </table>
 </div>
-<div class="stepHeading">Define the expected results</div>
+<div class="stepHeading">Entornos de Prueba</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td><p>
-    Define the expected results of each test so that it can be verified.
-</p>
-<p>
-    After a test runs, you need to be able to compare the results of running the test against what was expected to happen.
-    The test is successful when the actual results match the expected results.
-</p></td>
+<td>Preparar los entornos de prueba, que pueden incluir servidores de prueba, bases de datos de prueba y configuraciones
+específicas. Asegurarse de que los entornos sean lo más parecidos posible al entorno de producción.</td>
 </tr>
 </table>
 </div>
-<div class="stepHeading">Write the test logic</div>
+<div class="stepHeading">Implementar Pruebas Automatizadas</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td>Write the steps that perform the actual test(s).</td>
+<td>Desarrollar y configurar pruebas automatizadas cuando sea posible. Las pruebas automatizadas son útiles para repetir
+pruebas con regularidad y para tareas repetitivas.</td>
 </tr>
 </table>
 </div>
-<div class="stepHeading">Define the test response</div>
+<div class="stepHeading">Ejecutar Casos de Prueba</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td>Define the information the test(s) must produce to successfully indicate success or failure. Consider if a response of True
-or False is sufficient, or if a detailed message should be logged as well.</td>
+<td>Ejecutar los casos de prueba diseñados en el entorno de prueba. Registrar los resultados de cada prueba, incluyendo
+cualquier error encontrado.</td>
 </tr>
 </table>
 </div>
-<div class="stepHeading">Write clean-up code</div>
+<div class="stepHeading">Evaluar Resultados de Pruebas</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td>Identify, and then implement, the steps to be followed in order to restore the environment to the original state for each
-test. The goal is to ensure that there are no side effects from running the tests.</td>
+<td>Analizar los resultados de las pruebas y compararlos con los resultados esperados. Identificar y documentar cualquier error
+o discrepancia encontrada.</td>
 </tr>
 </table>
 </div>
-<div class="stepHeading">Test the test</div>
+<div class="stepHeading">Corregir y Retestear</div>
 <div class="stepContent">
 <table class="stepTable" border="0" cellspacing="0" cellpadding="0">
 <tr valign="top">
-<td><p>
-    Verify that each developer test works correctly. To do this:
-</p>
-<ul>
-    <li>
-        Run the test(s), observe their behavior, and fix any defects in the tests.
-    </li>
-    <li>
-        Ensure that the expected results are defined properly and that they're being checked correctly.
-    </li>
-    <li>
-        Check the clean-up logic for each test.
-    </li>
-    <li>
-        Ensure that each developer test works within your test suite framework.
-    </li>
-</ul></td>
+<td>Corregir los errores identificados durante las pruebas y volver a ejecutar las pruebas afectadas para asegurarse de que los
+problemas se han solucionado correctamente.</td>
 </tr>
 </table>
 </div>
